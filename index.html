@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domaine Réservé | Bouygues Construction</title>
     <style>
-        /* Style minimaliste et professionnel */
+        /* Identité visuelle Bouygues Construction */
+        :root {
+            --min-orange: #FF5E00; /* Le orange spécifique Construction */
+            --dark-grey: #333333;
+            --light-bg: #f8f9fa;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -13,81 +19,93 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f7f9;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: #333;
+            background-color: var(--light-bg);
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-grey);
             text-align: center;
         }
 
         .container {
             background: white;
-            padding: 40px;
-            border-top: 5px solid #005691; /* Bleu Bouygues */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            max-width: 500px;
+            padding: 50px 40px;
+            border-left: 8px solid var(--min-orange); /* Accentuation Orange */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            max-width: 450px;
             width: 90%;
         }
 
-        .logo {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: #005691;
-            margin-bottom: 20px;
+        .brand {
+            font-size: 1.4rem;
+            font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: -0.5px;
+            margin-bottom: 30px;
         }
 
-        .logo span {
-            color: #e2001a;
-        }
+        .brand .company { color: var(--dark-grey); }
+        .brand .tag { color: var(--min-orange); }
 
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
 
         p {
+            font-size: 1rem;
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            line-height: 1.5;
         }
 
-        .contact-box {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #eee;
+        .contact-card {
+            border: 2px solid var(--min-orange);
+            padding: 20px;
+            border-radius: 2px;
+            background-color: rgba(255, 94, 0, 0.03);
+        }
+
+        .contact-label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
         }
 
         .contact-name {
             font-weight: bold;
-            color: #005691;
-            display: block;
-            font-size: 1.1rem;
+            color: var(--min-orange);
+            font-size: 1.25rem;
         }
 
-        .footer-note {
-            margin-top: 30px;
-            font-size: 0.8rem;
-            color: #aaa;
+        .footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #bbb;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo">Bouygues <span>Construction</span></div>
+        <div class="brand">
+            <span class="company">Bouygues</span> <span class="tag">Construction</span>
+        </div>
         
-        <h1>Domaine Réservé</h1>
-        <p>Ce nom de domaine a été enregistré pour un usage futur par le groupe.</p>
+        <h1>Ce domaine est réservé</h1>
+        <p>Ce nom de domaine a été enregistré pour un usage du groupe.</p>
 
-        <div class="contact-box">
-            <p style="margin-bottom: 5px; font-size: 0.9rem;">Pour toute information, contactez :</p>
+        <div class="contact-card">
+            <span class="contact-label">Contact référent</span>
             <span class="contact-name">NGUYEN Viet Toan</span>
         </div>
 
-        <div class="footer-note">
-            &copy; 2026 Bouygues Construction. Tous droits réservés.
+        <div class="footer">
+            &copy; 2026 Bouygues Construction
         </div>
     </div>
 
